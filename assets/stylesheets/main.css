@@ -1,0 +1,91 @@
+html {
+    background: rgba(1, 130, 255, 0.5);
+background: -webkit-linear-gradient(bottom, rgba(1, 130, 255, 0.5), rgba(232, 241, 249, 0.5));
+background: -moz-linear-gradient(bottom, rgba(1, 130, 255, 0.5), rgba(232, 241, 249, 0.5));
+background: linear-gradient(to top, rgba(1, 130, 255, 0.5), rgba(232, 241, 249, 0.5));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container {
+    background-color: #f7f7f7;
+    margin: 10% 30%;
+}
+
+h1 {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.add-input {
+    float: right;
+}
+
+input {
+    color: gray;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border: none;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: gray;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+}
+
+li:nth-child(2n) {
+    background-color: white;
+}
+
+.done {
+    color: grey;
+    text-decoration: line-through;
+}
+
+span {
+    background-color: red;
+    height: 100%;
+    width: 0;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+li:hover span {
+    width: 60px;
+    opacity: 1;
+}
+
+.delete-todo {
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+}
